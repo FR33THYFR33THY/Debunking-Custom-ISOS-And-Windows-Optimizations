@@ -99,6 +99,7 @@ There's one exception I can't explain: Windows 11 2025 Server and Windows 10 202
 After reinstalling and retesting Windows 10, Windows 11, Windows 11 2025 Server, and Windows 10 2022 Server, and running the MW2 benchmark as well as testing in a real match, I reached the same conclusion.
 For some reason, the server versions perform better when CPU-bound in MW2. This seems unexplainable from my perspective, likely due to poor engine optimization.
 Side note, MW2 performed poorly on Windows 10 2022 Server unless chipset drivers were installed, benchmarks were identical on the other windows builds with or without chipset drivers.
+Update 4/3/2026 came to the conclusion that MMAgent features are different on server vs home/pro. MW2 Patched this issue on later updates.
 
 **WHAT ABOUT LATENCYMON BENCHMARKS?**
 
@@ -131,7 +132,7 @@ I'm planning to demonstrate scaling with these factors in future videos, but for
 - Good/Low game config and in game settings (to achieve higher fps and lower gpu usage)
 - Flip model in game, using hardware indepenant flip or legacy flip
 - Lowering resolution, dlss or fsr techniques (to achieve higher fps and lower gpu usage)
-- Nvidia reflex on + boost, will drastically lower your latency in a gpu bound situation
+- Nvidia reflex on + boost, will lower your latency in a cpu bound situation
 - As discussed here, the conclusion is that Defender and background bloat primarily impact low-end CPUs and systems the most.
 - Background programs running that use CPU, GPU usage
 
@@ -185,7 +186,7 @@ I'm planning to demonstrate scaling with these factors in future videos, but for
 - Driver 560.81, https://us.download.nvidia.com/Windows/560.81/560.81-desktop-win10-win11-64bit-international-dch-whql.exe
 - Frameview, measure, https://www.nvidia.com/en-au/geforce/technologies/frameview/
 - Capframe X, compare, https://www.capframex.com/
-- External latency end to end tool, including Logitech G303 Shroud Edition latency, build guide here soon
+- External latency end to end tool, including Logitech G303 Shroud Edition latency, build guide here https://github.com/FR33THYFR33THY/DIY-Latency-Tool
 - Geforce in game latency flash, https://nvidia.custhelp.com/app/answers/detail/a_id/5175/~/what-is-the-%E2%80%9Cflash-indicator%E2%80%9D-or-%E2%80%9Clatency-flash%E2%80%9D-option-in-my-nvidia
 
 **BENCHMARKS**
@@ -201,7 +202,6 @@ I'm planning to demonstrate scaling with these factors in future videos, but for
 - Rebar forced on for all titles, rebar forced off mw2 and mw3, via inspector https://github.com/Orbmu2k/nvidiaProfileInspector/releases
 - All low, ultra textures, ultra AF
 - 1080p & 4k
-- Config files included here
 
 **TO KEEP IT FAIR all installs are using the same**
 - Graphics card overclock
